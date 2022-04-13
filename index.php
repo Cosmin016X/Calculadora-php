@@ -20,16 +20,29 @@
         <input class="cuadros" text="Calculadora" name="calculadora" id="num1">
         <input class="cuadros" text="Calculadora" name="calculadora" id="num2">
         
-        <select name="lista">
-            <option>Sumar</option>
-            <option>Restar</option>
-            <option>Multiplicar</option>
-            <option>Dividir</option>
-            <option></option>
-        </select>
-
         <button class="boton" type="submit" id="button">Calcular</button>
 
+        <div class="contenedor_panel">
+            <select name="lista" id="calcular">
+                <option>Sumar</option>
+                <option>Restar</option>
+                <option>Multiplicar</option>
+                <option>Dividir</option>
+                <option>Resto de division</option>
+            </select>
+        </div>
+
+        <div class="resultado" action="calculadora.php">
+
+            <?php
+
+                include("calculadora.php");
+
+
+            
+            ?>
+
+        </div>
 
     </form>
 
